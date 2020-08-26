@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Mac OS file system garbage
+*DS_STORE*
+*ds_store*
