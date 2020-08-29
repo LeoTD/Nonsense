@@ -1,2 +1,2 @@
-# Nonsense
-Small projects with no home
+# The Project Orphanage
+A place for small projects with no home.
