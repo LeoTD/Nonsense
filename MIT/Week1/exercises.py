@@ -39,3 +39,18 @@ Args:
 	- s: String to search.
 """
 def alphaSubtring(s):
+	best = s[:1] # Best substring so far.
+	ci = 0 # Start index of current substring.
+	pre = s[:1] # Previous character.
+
+	for idx, c in enumerate(s[1:], 1):
+		if c < pre:
+			if len(best) < len(s[ci:idx]):
+				best = s[ci:idx]
+			ci = idx
+		pre = c
+	if len(best) < len(s[ci:]):
+		best = s[ci:]
+	return best
+
+# print(alphaSubtring(input()))
